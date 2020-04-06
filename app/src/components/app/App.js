@@ -6,7 +6,16 @@ import CryptomonContract from 'contracts/CryptomonContract';
 
 import CryptomonList from 'components/CryptomonList';
 
-export default class App extends PureComponent {
+import type { CryptomonType } from 'types/CryptomonTypes';
+
+type Props = {||};
+
+type State = {|
+  myCryptomons: CryptomonType[],
+  account: string,
+|};
+
+export default class App extends PureComponent<Props, State> {
   state = {
     myCryptomons: [],
     account: '',

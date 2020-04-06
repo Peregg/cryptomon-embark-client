@@ -15,6 +15,9 @@ module.file_ext=.js
 module.name_mapper='^components\/\(.*\)$' -> '<PROJECT_ROOT>/app/src/components/\1'
 module.name_mapper='^fragments\/\(.*\)$' -> '<PROJECT_ROOT>/app/src/fragments/\1'
 module.name_mapper='^images\/\(.*\)$' -> '<PROJECT_ROOT>/app/src/assets/images/\1'
+module.name_mapper='^constants\/\(.*\)$' -> '<PROJECT_ROOT>/app/src/assets/constants/\1'
+module.name_mapper='^styles\/\(.*\)$' -> '<PROJECT_ROOT>/app/src/styles/\1'
+module.name_mapper='^types\/\(.*\)$' -> '<PROJECT_ROOT>/app/src/types/\1'
 module.name_mapper='^contracts\/\(.*\)$' -> '<PROJECT_ROOT>/embarkArtifacts/contracts/\1'
 
 [strict]

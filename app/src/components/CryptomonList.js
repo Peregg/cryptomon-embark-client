@@ -1,19 +1,30 @@
+// @flow
+
 import React, { PureComponent } from 'react';
 
 import CryptomonCard from 'fragments/CryptomonCard';
 
-export default class CryptomonList extends PureComponent {
+import type { CryptomonType } from 'types/CryptomonTypes';
+
+import 'styles/CryptomonList.scss';
+
+type Props = {|
+  getCryptomons: () => void,
+  cryptomons: CryptomonType[],
+|};
+
+export default class CryptomonList extends PureComponent<Props> {
   async componentDidMount() {
     const { getCryptomons } = this.props;
     getCryptomons();
   }
 
-  renderCryptomons = () => {
+  renderCryptomons = (): React$Element<'div'>[] => {
     const { cryptomons } = this.props;
 
-    return cryptomons.map(({ name, type }) => (
+    return cryptomons.map((cryptomon) => (
       <CryptomonCard
-        name={name}
+        cryptomon={cryptomon}
       />
     ));
   }
@@ -26,9 +37,9 @@ export default class CryptomonList extends PureComponent {
         <button onClick={() => getCryptomons()}>
           Voir mes cryptomons
         </button>
-        <ul>
+        <div className='list-container'>
           {this.renderCryptomons()}
-        </ul>
+        </div>
       </div>
     );
   }

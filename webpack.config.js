@@ -61,6 +61,9 @@ const allAliases = {
   components: "/Users/pierrick/Desktop/blockchain/cryptomon/app/src/components/",
   fragments: "/Users/pierrick/Desktop/blockchain/cryptomon/app/src/fragments/",
   images: "/Users/pierrick/Desktop/blockchain/cryptomon/app/src/assets/images/",
+  constants: "/Users/pierrick/Desktop/blockchain/cryptomon/app/src/constants/",
+  styles: "/Users/pierrick/Desktop/blockchain/cryptomon/app/src/styles/",
+  types: "/Users/pierrick/Desktop/blockchain/cryptomon/app/src/types/",
   contracts: "/Users/pierrick/Desktop/blockchain/cryptomon/embarkArtifacts/contracts/"
 };
 

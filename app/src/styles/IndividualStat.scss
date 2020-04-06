@@ -1,0 +1,11 @@
+.stat-container {
+  width: 64px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+
+  .stat-icon {
+    width: 30px;
+    height: 30px;
+  }
+}
