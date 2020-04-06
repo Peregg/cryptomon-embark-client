@@ -1,7 +1,10 @@
+// @flow
+
 import React, { PureComponent } from 'react';
 
-import CryptomonContract from '../../../../embarkArtifacts/contracts/CryptomonContract';
-import CryptomonList from '../../components/CryptomonList.js';
+import CryptomonContract from 'contracts/CryptomonContract';
+
+import CryptomonList from 'components/CryptomonList';
 
 export default class App extends PureComponent {
   state = {

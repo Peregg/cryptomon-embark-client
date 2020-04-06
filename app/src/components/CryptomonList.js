@@ -1,5 +1,7 @@
 import React, { PureComponent } from 'react';
 
+import CryptomonCard from 'fragments/CryptomonCard';
+
 export default class CryptomonList extends PureComponent {
   async componentDidMount() {
     const { getCryptomons } = this.props;
@@ -9,7 +11,11 @@ export default class CryptomonList extends PureComponent {
   renderCryptomons = () => {
     const { cryptomons } = this.props;
 
-    return cryptomons.map(({ name, type }) => <li>{`${name} de type ${type}`}</li>);
+    return cryptomons.map(({ name, type }) => (
+      <CryptomonCard
+        name={name}
+      />
+    ));
   }
 
   render() {

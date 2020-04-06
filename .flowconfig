@@ -1,0 +1,20 @@
+[ignore]
+
+[include]
+
+[libs]
+
+[lints]
+
+[options]
+module.system.node.resolve_dirname=node_modules
+module.system.node.resolve_dirname=./app
+module.file_ext=.scss
+module.file_ext=.js
+
+module.name_mapper='^components\/\(.*\)$' -> '<PROJECT_ROOT>/app/src/components/\1'
+module.name_mapper='^fragments\/\(.*\)$' -> '<PROJECT_ROOT>/app/src/fragments/\1'
+module.name_mapper='^images\/\(.*\)$' -> '<PROJECT_ROOT>/app/src/assets/images/\1'
+module.name_mapper='^contracts\/\(.*\)$' -> '<PROJECT_ROOT>/embarkArtifacts/contracts/\1'
+
+[strict]
